@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AppNote.Data;
+using AppNote.ViewModels;
+using AppNote.Views;
+using Microsoft.Extensions.Logging;
 
 namespace AppNote
 {
@@ -6,6 +9,10 @@ namespace AppNote
     {
         public static MauiApp CreateMauiApp()
         {
+            // Database Created
+            DBContext dbContext = new DBContext();
+            dbContext.Database.EnsureCreated();
+
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
@@ -14,6 +21,9 @@ namespace AppNote
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            // Singleton
+            builder.Services.AddSingleton<NoteView>();
+            builder.Services.AddSingleton<NoteViewModel>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
