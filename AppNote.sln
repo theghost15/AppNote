@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppNote", "AppNote\AppNote.csproj", "{450E8E3C-769F-4D00-9C3E-BDDECAFD81DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{450E8E3C-769F-4D00-9C3E-BDDECAFD81DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450E8E3C-769F-4D00-9C3E-BDDECAFD81DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450E8E3C-769F-4D00-9C3E-BDDECAFD81DF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{450E8E3C-769F-4D00-9C3E-BDDECAFD81DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450E8E3C-769F-4D00-9C3E-BDDECAFD81DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450E8E3C-769F-4D00-9C3E-BDDECAFD81DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D99256D6-E0A8-4DB5-B835-56ED77BC89F5}
+	EndGlobalSection
+EndGlobal
