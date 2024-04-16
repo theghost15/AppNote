@@ -10,8 +10,7 @@ namespace AppNote.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            var filename = Path.Combine(path, "AppDBNote.db");
+            var filename = Path.Combine(FileSystem.AppDataDirectory, "AppDBNote.db");
             optionsBuilder.UseSqlite("FileName="+filename);
         }
     }
